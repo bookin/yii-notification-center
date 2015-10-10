@@ -9,7 +9,12 @@ Connect component to the config:
         'countSaveOld'=>false //if need save only a certain amount of notifications, set the number in this property if don't need delete old notification, please set false this property
         'timeUpdateCenter' = 15 * 1000, //how soon check for new notifications
         'numberDisplay' => 6, //ow many notifications will be displayed in a popup window
-        'numberDisplayInAll' => 20 //how many notifications will be displayed in page where shows all notifications
+        'numberDisplayInAll' => 20, //how many notifications will be displayed in page where shows all notifications
+        'defaultImage' => '{themeUrl}/img/urbantip-mini-mottotrue.png', //Url to default image, you can user special words:
+                                                                        //  '{themeUrl}' == Yii::app()->theme->baseUrl
+                                                                        //  '{basePath}' == Yii::app()->basePath
+                                                                        //  '{baseUrl}'  == Yii::app()->baseUrl
+        'forGuest'=>'Please sign up', //notification for guest
     ),
     ...
 )
@@ -73,7 +78,7 @@ Yii::app()->notify->addNotifyForUser($user_id, $options=[]);
 Yii::app()->notify->addNotifyForAllUsers($options=[]);
 ```
 
-`$options` it's a array with Notify model params
+`$options` it's a array with Notify model parameters
 
 ```php
 $options = [
