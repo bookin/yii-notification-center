@@ -1,0 +1,184 @@
+.notification_center{
+    position: relative;
+    /*top: -60px;*/
+}
+.notify_label{
+    position: relative;
+}
+.notify_content{
+    min-width: 370px;
+    text-align: left;
+    padding: 0;
+    border: #E5E5E5 solid 1px;
+}
+.notify_content.popover {
+    border-radius: 0;
+    border-top: none;
+}
+.notify_content .popover-content{
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.notify_content .popover-title{
+    text-transform: capitalize;
+}
+.notify .date{
+    font-size: 10px;
+    color: #909090;
+    text-shadow: 0 1px #FFF;
+    margin-top: 5px;
+}
+
+.no_notify{
+    padding: 10px;
+    text-align: center;
+    color: #555;
+}
+
+.notify_content h3{
+    text-align: left;
+}
+
+.notify_content *{
+    -webkit-user-select:none;-moz-user-select:none;user-select:none;
+    line-height: 1.5;
+}
+
+.notify{
+    position: relative;
+    -webkit-user-select: auto;
+    font-size: 12px;
+    border-bottom: 1px solid #E4E4E4;
+    padding: 9px 15px;
+    background: #f0f0f0;
+}
+.notify.link{
+    cursor: pointer;
+}
+.notify.read{
+    background: #ffffff;
+}
+.notify:hover{
+    background: #e9e9e9;
+}
+.notify .notify_head{
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.notify .left-block{
+    float: left;
+    margin: 0 10px 5px 0;
+    width: 20%;
+    max-width: 60px;
+}
+.notify .image{
+    overflow: hidden;
+}
+.notify .image img{
+    width: 100%;
+}
+
+
+.notify img.notify_arrow{
+    width: auto;
+    box-shadow: none;
+    position: absolute;
+    right: 15px;
+    top: 40%;
+}
+
+.notify_content .noty-setting{
+    display: block;
+    margin: 10px;
+    font-size: 11px;
+    text-decoration: none;
+    color: rgb(167, 166, 166);
+}
+
+.notify_button .ret-icon{
+    font-size: 20px;
+}
+
+.notify_button .ret-icon.ret-icon--inverse {
+    color: #ccc;
+}
+
+.notify_button .ret-icon.ret-icon--inverse:hover {
+    color: white;
+}
+
+.notify_button .label {
+    font-size: 11px;
+    padding: .1em 0.2em;
+    font-weight: normal;
+    margin-left: -25px;
+    margin-right: 15px;
+    top: -8px;
+    position: relative;
+}
+
+.notify_button{
+    color: #555;
+}
+
+.notify_button.btn { 
+    border-radius: 0;
+    padding: 0;
+}
+
+.notify_button.btn.active, .notify_button.btn:active{
+    color: #428BCA;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.notify_button .count{
+    display: none;
+    background-color: #999;
+}
+
+.notify_button.active .count{
+    display: inline;
+    background-color: #D9534F;
+}
+
+.notify_button .ui-effects-wrapper{
+    display: inline-block;
+}
+
+a.show_all{
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+/*
+* Reminder - Напоминания
+* */
+#reminder_form{
+    width: 381px;
+}
+#reminder_form input[type="text"],
+#reminder_form textarea{
+    width: 338px;
+}
+
+#reminder_form{
+    left: 91px;
+    top: auto;
+    bottom: 0;
+    text-align: left;
+}
+#reminder_form .form label{
+    font-weight: normal;
+    font-size: 12px;
+}
+#reminder_form .arrow{
+    bottom: 8px;
+    top: auto;
+}
+#reminder_form  .alert{
+    font-size: 11px;
+}
