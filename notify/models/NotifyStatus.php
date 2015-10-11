@@ -13,7 +13,7 @@
  * The followings are the available model relations:
  * @property Notify $notify
  */
-class NotifyStatus extends _BaseModel {
+class NotifyStatus extends CActiveRecord {
 	/**
 	 * @return string the associated database table name
 	 */

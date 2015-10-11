@@ -29,7 +29,7 @@
  * @property NotifyStatus $status
  * @property NotifyStatus[] $states
  */
-class Notify extends _BaseModel
+class Notify extends CActiveRecord
 {
     /*Прочитаное и не прочитанное*/
     const NOT_READ = 0;
