@@ -1,6 +1,6 @@
 <?php
 
-class NotifyController extends FrontController
+class NotifyController extends CController
 {
     /*public function filters()
     {
