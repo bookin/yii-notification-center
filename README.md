@@ -1,5 +1,11 @@
 ### Install
 
+Apply migrations
+
+```
+php yiic.php migrate --migrationPath=application.modules.notify.migrations
+```
+
 Connect component to the config:
 
 ```
