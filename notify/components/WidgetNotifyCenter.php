@@ -39,7 +39,7 @@ class WidgetNotifyCenter extends CWidget{
 //            $newModel->header = 'Hello, welcome back!';
             $newModel->description = Yii::app()->notify->messageForGuest;
 //            $newModel->date_show = date("Y-m-d H:i:s");
-            $newModel->notify_link = Yii::app()->createAbsoluteUrl('/site/login');
+            $newModel->setUrl(['/site/login']);
             $newModel->img=$newModel->getDefaultImage();
             $model=[$newModel];
         }
