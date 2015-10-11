@@ -692,5 +692,23 @@ class Notify extends CActiveRecord
 
         return self::model()->exists($criteria);
     }
+
+    public static function getFormatDate($value){
+        if($value=='0000-00-00' || $value=='0000-00-00 00:00:00' || is_null($value) || empty($value))
+            return '';
+        if(is_string($value)) {
+            $now = strtotime(date("Y-m-d")); // or your date as well
+            $article_datetime = strtotime($value);
+            $datediff = $now - $article_datetime;
+            $days = floor($datediff / (60*60*24));
+            if ($days > 0) {
+                $text_date = $days . " days ago";
+            } else {
+                $article_date = date("d-m-Y H:i", $article_datetime);
+                $text_date = $article_date;
+            }
+            return $text_date;
+        }
+    }
     
 }

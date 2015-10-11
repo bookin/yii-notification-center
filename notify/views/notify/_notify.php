@@ -30,7 +30,7 @@ if($notify->url)
             <?=$notify->description?>
         </div>
         <div class="date">
-            <?=Yii::app()->format->formatArticleDate(isset($notify->status)&&$notify->status->date_showed?$notify->status->date_showed:$notify->date);?>
+            <?=Notify::getFormatDate(isset($notify->status)&&$notify->status->date_showed?$notify->status->date_showed:$notify->date);?>
         </div>
     </div>
 </div>
