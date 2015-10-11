@@ -35,7 +35,7 @@ $clientScript->registerScript('notify_config', $script, CClientScript::POS_END);
 ?>
 <div class="notification_center">
     <a class="notify_button btn <?= ($count_new ? 'active' : '') ?>">
-        <span class="glyphicon glyphicon-bel" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
         <span class="count label"><?= $count_new ?></span>
     </a>
 
