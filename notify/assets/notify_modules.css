@@ -52,6 +52,7 @@
     border-bottom: 1px solid #E4E4E4;
     padding: 9px 15px;
     background: #f0f0f0;
+    cursor: pointer;
 }
 .notify.link{
     cursor: pointer;
