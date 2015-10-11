@@ -4,7 +4,7 @@ class m150514_104415_create_notify_table extends CDbMigration
 {
 	public function up()
 	{
-        $tableName = '{{_notify}}';
+        $tableName = '{{notify}}';
         $this->createTable($tableName, [
             'id'=>'pk',
             'date_show'=>'datetime NOT NULL',
@@ -24,7 +24,7 @@ class m150514_104415_create_notify_table extends CDbMigration
 
 	public function down()
 	{
-		$this->dropTable('{{_notify}}');
+		$this->dropTable('{{notify}}');
 		return true;
 	}
 }
