@@ -29,6 +29,14 @@ Connect module to the config:
 )
 ```
 
+Add models to import:
+
+```
+'import' => [
+    'application.modules.notify.models.*',
+]
+```
+
 Add widget to the page:
 
 ```
