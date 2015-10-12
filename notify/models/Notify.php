@@ -72,7 +72,7 @@ class Notify extends CActiveRecord
      */
     public function tableName()
     {
-        return '{{_notify}}';
+        return '{{notify}}';
     }
 
 

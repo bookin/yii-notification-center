@@ -19,7 +19,7 @@ class NotifyStatus extends CActiveRecord {
 	 */
 	public function tableName()
 	{
-		return '{{_notify_status}}';
+		return '{{notify_status}}';
 	}
 
 	/**
